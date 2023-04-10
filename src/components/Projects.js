@@ -1,8 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/project-1.png";
+import projImg2 from "../assets/img/project-3.png";
+import projImg3 from "../assets/img/project-2.png";
+import projImg4 from "../assets/img/project-4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,19 +12,19 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "News App",
+      description: "A News App built using ReactJS and News API. The users can search for news articles based on the keywords they enter. The app also has a dark mode feature. The users can sort the news articles based on the date and time they were published.",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "TextUtils",
+      description: "Text Manipulation Tool",
+      imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "E-COMMERCE WEBSITE FOR MUSICAL INSTRUMENTS",
+      description: "I built the frontend of this website using ReactJS and Bootstrap. Login and Signup functionality is also implemented.My friends did the backend using Django and MySQL.",
+      imgUrl: projImg2,
     },
   ];
 
@@ -36,7 +37,9 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p> I have developed 3 real world
+                    Projects till now that are currently being used by the
+                    people all over India. </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -51,7 +54,6 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
                         {
                           projects.map((project, index) => {
                             return (
@@ -62,13 +64,16 @@ export const Projects = () => {
                             )
                           })
                         }
-                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <a>
+                        <img src={projImg4} />
+                      </a>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <a>
+                          <h3>Coming Soon</h3>
+                        </a>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

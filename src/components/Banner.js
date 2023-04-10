@@ -80,8 +80,8 @@ export const Banner = () => {
                   </h1>
                   <p>
                     I am a Computer Science graduate and I love working on front
-                    end web development projects.<br/> I have developed 2 real world
-                    websites till now that are currently being used by the
+                    end web development projects.<br/> I have developed 3 real world
+                    Projects till now that are currently being used by the
                     people all over India.<br/> I am a 5 star C++ coder and a 5 star Logical problem solver at HackerRank.
                   </p>
                 
