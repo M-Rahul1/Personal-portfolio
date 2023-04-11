@@ -49,12 +49,11 @@ export const Banner = () => {
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
-    function connect() {
-      window.location="mailto:rahul2001ramesh@gmail.com"   
-     }
-    
   };
-
+  const handleClick = () => {
+    window.open('mailto:rahul2001ramesh@gmail.com');
+  };
+  
   return (
     <section className="banner" id="home">
       <Container>
@@ -85,7 +84,7 @@ export const Banner = () => {
                     people all over India.<br/> I am a 5 star C++ coder and a 5 star Logical problem solver at HackerRank.
                   </p>
                 
-                  <button onClick={() => "connect"}>
+                  <button onClick={handleClick}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
